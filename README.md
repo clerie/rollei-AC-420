@@ -7,6 +7,71 @@ rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000
 rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/track1
 ```
 
+### Network sniffer output
+192.168.1.1:554 TCP
+```
+DESCRIBE rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000 RTSP/1.0
+CSeq: 2
+User-Agent: ICatchMedia (LIVE555 Streaming Media v2013.06.06)
+Accept: application/sdp
+
+RTSP/1.0 200 OK
+CSeq: 2
+Date: 2012/1/1
+Content-Base: rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/
+Content-Type: application/sdp
+Content-Length: 330
+
+v=0
+o=- 1363853598 1 IN IP4 192.168.1.1
+s=Motion JPEG. Streamed by iCatchTek.
+i=MJPG
+t=0 0
+a=tool:iCatchTek
+a=type:broadcast
+a=control:*
+a=range:npt=0-
+a=x-qt-text-nam:Motion JPEG. Streamed by iCatchTek.
+a=x-qt-text-inf:MJPG
+m=video 0 RTP/AVP 26
+c=IN IP4 0.0.0.0
+b=AS:12288
+a=frmerate:167.1016082
+a=control:track1
+SETUP rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/track1 RTSP/1.0
+CSeq: 3
+User-Agent: ICatchMedia (LIVE555 Streaming Media v2013.06.06)
+Transport: RTP/AVP;unicast;client_port=39990-39991
+
+RTSP/1.0 200 OK
+CSeq: 3
+Date: 2012/1/1
+Transport: RTP/AVP;unicast;destination=192.168.1.10;source=192.168.1.1;client_port=39990-39991;server_port=7004-7005
+Session: A5CD1204
+
+PLAY rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/ RTSP/1.0
+CSeq: 4
+User-Agent: ICatchMedia (LIVE555 Streaming Media v2013.06.06)
+Session: A5CD1204
+Range: npt=0.000-
+
+RTSP/1.0 200 OK
+CSeq: 4
+Date: 2012/1/1
+Range: npt=0.000-
+Session: A5CD1204
+RTP-Info: url=rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/track1;seq=46383;rtptime=2000000000
+
+TEARDOWN rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/ RTSP/1.0
+CSeq: 5
+User-Agent: ICatchMedia (LIVE555 Streaming Media v2013.06.06)
+Session: A5CD1204
+
+RTSP/1.0 200 OK
+CSeq: 5
+Date: 2012/1/1
+```
+
 ## Play a saved File
 ```
 rtsp://192.168.1.1/VIDEO/20171006_125541.MOV
@@ -23,7 +88,25 @@ PASSWORD: wificam
 ```
 But you can use any username and password.
 
-### Test
+### Network sniffer output
+192.168.1.1:21 TCP
+```
+220 Welcomd to iCatch FTP Server
+USER wificam
+331 User name okay, need password.
+PASS wificam
+230 User logged in, proceed.
+SYST215 UNIX TYPE: L8
+PASV
+227 Enter Passive Mode (192,168,1,1,192,1)
+RETR /JPG/20170915_195648.JPG
+150 File status okay, about to open data connection.
+226 Closing data connection. Requested file action successful.
+QUIT
+221 Good bye.
+```
+
+### First test
 Linux terminal:
 * cd doesn't work
 * File download needs to be binary
