@@ -1,4 +1,4 @@
-# rollei-AC-420
+# Rollei AC 420
 Reverse Engineering of the Rollei AC 420 WiFi connection
 
 ## Play Livestream
