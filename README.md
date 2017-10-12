@@ -14,7 +14,7 @@ rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000
 rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/track1
 ```
 
-If you're using VLC and you are wondering about a delay with ~1 second delay:
+If you're using VLC and you may wondering about a ~1 second delay:
 Have a look in streaming configuration at ```Show more options``` and set the caching to 0 i.e.
 
 ### Network sniffer output
