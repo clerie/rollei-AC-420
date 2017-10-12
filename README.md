@@ -1,7 +1,14 @@
 # Rollei AC 420
 Reverse Engineering of the Rollei AC 420 WiFi connection
 
+## Connection
+Activate WiFi on camera and connect with an computer. Use the shown login details. You will recieve an IP address via DHCP from camera:
+```
+192.168.1.10
+```
+
 ## Play Livestream
+Open this with VLC (i.e.)
 ```
 rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000
 rtsp://192.168.1.1/MJPG?W=720&H=400&Q=50&BR=5000000/track1
