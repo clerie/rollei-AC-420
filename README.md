@@ -21,7 +21,7 @@ Login used by camera:
 USERNAME: wificam
 PASSWORD: wificam
 ```
-But you can use every username and password.
+But you can use any username and password.
 
 ### Test
 Linux terminal:
@@ -50,7 +50,7 @@ binary     hash          modtime    recv        tenex
 bye        help          mput       reget       tick
 case       idle          newer      rstatus     trace
 cd         image         nmap       rhelp       type
-cdup       ipany         nlist      rename		user
+cdup       ipany         nlist      rename      user
 chmod      ipv4          ntrans     reset       umask
 close      ipv6          open       restart     verbose
 cr         lcd           prompt     rmdir       ?
@@ -299,6 +299,18 @@ ftp> exit
 ```
 
 #### Naminig of videos and photos
+
+It is a combination of the date and an id. The name is 8 characters long. On the right is the id, left of it a ~ character and the remaining space is filled by the date of capturing in Format YYYYMM. It is shorten at the last character of date first, so following patterns should be possible:
+
+* YYYYMM~X
+* YYYYM~XX
+* YYYY~XXX
+* YYY~XXXX
+* YY~XXXXX
+* Y~XXXXXX
+* ~XXXXXXX ???
+* XXXXXXXX ???
+
 ```
 201706~1.JPG
 201708~2.JPG
