@@ -31,12 +31,41 @@ Linux terminal:
 
 ```
 
+### Filesystem
+```
+/
+|- VIDEO
+|  |- All videos (Naming see below)
+|- JPG
+|  |- All photos (Naming see below)
+|- SYSTEM~1
+   |- INDEXE~1
+   |- WPSETT~1.DAT
+```
+
+#### Naminig of videos and photos
+```
+201706~1.JPG
+201708~2.JPG
+201708~3.JPG
+201709~4.JPG
+201710~5.JPG
+201710~6.JPG
+201710~7.JPG
+201710~8.JPG
+201710~9.JPG
+20171~10.JPG
+20171~11.JPG
+...
+```
+
 ## 192.168.1.1:17540 (PTP)
 ```
 ?
 ```
 
 ## Other
+Only some notes (guesses), not important or correct.
 ```
 rtsp://192.168.1.1
 rtsp://192.168.1.1/0
