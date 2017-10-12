@@ -379,6 +379,13 @@ ftp> exit
 221 Good bye.
 ```
 
+### Using Firefox
+Open the IP adress in Firefox as FTP:
+```
+ftp://192.168.1.1
+```
+
+
 ### Filesystem
 ```
 /
@@ -427,6 +434,9 @@ The Filename is followed by this extensions:
 ```
 ?
 ```
+
+## Sources
+* https://plan.leipzig.freifunk.net/issues/269
 
 ## Other
 Only some notes (guesses), not important or correct.
