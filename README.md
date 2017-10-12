@@ -13,4 +13,8 @@ rtsp://192.168.1.1/VIDEO/20171006_125541.MOV/track2
 ## 192.168.1.1:21 (FTP login)
 
 USERNAME: wificam
+
 PASSWORD: wificam
+
+## 192.168.1.1:17540 (PTP)
+?
