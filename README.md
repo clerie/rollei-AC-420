@@ -408,7 +408,7 @@ It is a combination of the date and an id. The name is 8 characters long. On the
 * YYY~XXXX
 * YY~XXXXX
 * Y~XXXXXX
-* ~XXXXXXX ??? I'am not shure, how the camera handle this, but i think nobody does so many shots
+* ~XXXXXXX ??? I'am not sure, how the camera handle this, but i think nobody does so many shots
 * XXXXXXXX ???
 
 The Filename is followed by this extensions:
